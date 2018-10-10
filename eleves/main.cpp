@@ -11,6 +11,8 @@ public:
 };
 int main()
 {
+  string chaine;
+  int y;
   vector<etudiant> epsi;
   string tmp_name;
   int tmp_note;
@@ -29,5 +31,15 @@ int main()
           cout << epsi[i].nom <<"                "<<epsi[i].note<<endl;
         };
 
+        cout <<"recherche etudiant"<< endl;
+        cin >> chaine;
+
+        int i= 0;
+
+          while(chaine != epsi[i].nom)
+            {
+              i++;
+            };
+              cout <<"la note est "<< epsi[i].note<<endl;
       return 0;
 }
